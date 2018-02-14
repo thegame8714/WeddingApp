@@ -3,6 +3,7 @@ import { TabNavigator } from 'react-navigation'
 import { View, Text } from 'react-native'
 import TestScreen from './TestScreen'
 import Countdown from './CountDown/CountDown'
+import WeatherWidget from './WheatherWidget'
 
 const MainNavigator = TabNavigator({
   Home: {
@@ -24,6 +25,7 @@ class MainScreen extends React.Component {
     return (
       <View style={{ flex: 1 }}>
         <Countdown date={new Date().getTime()} />
+        <WeatherWidget />
         <MainNavigator navigation={this.props.navigation} />
       </View>
     )
