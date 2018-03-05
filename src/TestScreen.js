@@ -5,7 +5,7 @@ class TestScreen extends React.Component {
   render() {
     return (
       <View>
-        <Text>Test screen</Text>
+        <Text>Test screenhh</Text>
       </View>
     )
   }

@@ -1,6 +1,8 @@
 import { StackNavigator } from 'react-navigation'
 import HomeScreen from './HomeScreen'
 import MainScreen from './MainScreen'
+import TestScreen from './TestScreen'
+import MainNavigator from './MainNavigator'
 
 const Navigator = StackNavigator({
   Home: {
@@ -8,7 +10,7 @@ const Navigator = StackNavigator({
     navigationOptions: { header: null }
   },
   Main: {
-    screen: MainScreen,
+    screen: MainNavigator,
     navigationOptions: { header: null }
   }
 })
