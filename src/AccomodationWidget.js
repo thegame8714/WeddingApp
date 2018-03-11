@@ -9,6 +9,7 @@ import {
 } from 'react-native'
 import moment from 'moment'
 import T from 'tcomb-form-native'
+var stylesheet = require('tcomb-form-native/lib/stylesheets/bootstrap')
 
 const Form = T.form.Form
 
@@ -62,10 +63,26 @@ class AccomodationWidget extends React.Component {
 
   render() {
     return (
-      <View>
-        <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-          <View>
-            <Form type={Accomodation} ref="form" options={options} />
+      <View
+        style={{
+          display: 'flex',
+          backgroundColor: '#ebaeb0',
+          padding: 10
+        }}
+      >
+        <Text style={{ fontSize: 30 }}>Book your AirBnb</Text>
+        <TouchableWithoutFeedback
+          onPress={Keyboard.dismiss}
+          accessible={false}
+          style={{ display: 'flex' }}
+        >
+          <View style={{ display: 'flex' }}>
+            <Form
+              type={Accomodation}
+              ref="form"
+              options={options}
+              style={{ display: 'flex' }}
+            />
           </View>
         </TouchableWithoutFeedback>
         <TouchableHighlight onPress={this.onPress}>

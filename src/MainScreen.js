@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { ScrollView, Text } from 'react-native'
 import Countdown from './CountDown/CountDown'
 import WeatherWidget from './WheatherWidget'
 import AccomodationWidget from './AccomodationWidget'
@@ -7,11 +7,11 @@ import AccomodationWidget from './AccomodationWidget'
 class MainScreen extends React.Component {
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <ScrollView style={{ flex: 1, backgroundColor: 'white' }}>
         <Countdown date={new Date().getTime()} />
         <WeatherWidget />
         <AccomodationWidget />
-      </View>
+      </ScrollView>
     )
   }
 }

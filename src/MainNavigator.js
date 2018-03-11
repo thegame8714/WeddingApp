@@ -13,24 +13,24 @@ const MainNavigator = TabNavigator({
       tabBarLabel: 'Main'
     }
   },
-  Confirm: {
-    screen: ConfirmScreen,
-    navigationOptions: {
-      tabBarLabel: 'Confirm'
-    }
-  },
+  // Confirm: {
+  //   screen: ConfirmScreen,
+  //   navigationOptions: {
+  //     tabBarLabel: 'Confirm'
+  //   }
+  // },
   Event: {
     screen: EventScreen,
     navigationOptions: {
       tabBarLabel: 'Event'
     }
-  },
-  OurStory: {
-    screen: TestScreen,
-    navigationOptions: {
-      tabBarLabel: 'Our Story'
-    }
   }
+  // OurStory: {
+  //   screen: TestScreen,
+  //   navigationOptions: {
+  //     tabBarLabel: 'Our Story'
+  //   }
+  // }
 })
 
 export default MainNavigator
